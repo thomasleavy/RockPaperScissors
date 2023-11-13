@@ -23,18 +23,18 @@ function gameStart() {
     }
   }
 
+  //invalid input
+  if (!player1 ||  !player2|| !isAcceptableChoice (player1) ||!isAcceptableChoice(player2)) {
+    alert("Error, try again");
+    return;
+  }
+  
     //showing results and displaying winner
   if (winner === 0) {
     alert("Tie");
   }
   else {
     alert("Player " + winner + " wins");
-  }
-
-  //invalid input
-  if (!player1 ||  !player2|| !isAcceptableChoice (player1) ||!isAcceptableChoice(player2)) {
-    alert("Error, try again");
-    return;
   }
 }
 
