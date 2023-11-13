@@ -9,6 +9,11 @@ function gameStart() {
 
   function getWinner (choice1, choice2) {
 
+  //tie
+  if (choice1 ===choice2) {
+    return 0;
+    }
+
   //choices players can make
   if ((choice1 ==="rock" && choice2 ==="scissors") ||
   (choice1==="paper" && choice2 ==="rock") ||
@@ -16,10 +21,6 @@ function gameStart() {
     return 1;}
     else {
       return 2;
-    }
-  //tie
-  if (choice1 ===choice2) {
-    return 0;
     }
   }
 
