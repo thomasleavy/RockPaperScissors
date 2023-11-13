@@ -19,3 +19,7 @@ button {
   width: 200px;
   font-size: 25px;
 }
+
+button:hover {
+  cursor: pointer;
+}
